@@ -11,20 +11,22 @@
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }  
   header h1 {
     font-weight: bold;
     font-size: 36px;
     color: #fc3838;
     margin: 0;
-    display: inline;
   }
   
   header a { text-decoration: none;
     color: #eeb88b;
   }
   header nav {
-    float: right;
+   
     margin: 7px 0;
   }
   header nav ul li {
@@ -229,14 +231,17 @@ header {
   .contact h2 {
     color: #fce138;
   }
+  .contact-info{
+    display: flex;
+  }
   .contact-info iframe {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
   } 
   .contact-info div {
     width: 410px;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: baseline;
     text-align: left;
     margin: 30px 0 0 60px;
     color: white;
@@ -257,4 +262,7 @@ header {
   .contact-info a {
     color: #fce138;
   }
+  
+
+  
   
