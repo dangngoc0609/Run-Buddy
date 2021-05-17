@@ -268,14 +268,16 @@ header {
     text-align: center;
   }
   .contact {
-    
+     
     background: #024e76;
   }
   .contact h2 {
     color: #fce138;
   }
-  .contact-info{
+  .contact-info {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   .contact-info iframe {
     width: 300px;
@@ -295,17 +297,32 @@ header {
     font-size: 32px;
   }
   
-  .contact-info p, .contact-info address {
-    margin: 20px 0;
-    line-height: 1.5;
-    font-size: 20px;
-    font-style: normal;
-  }
+  
   
   .contact-info a {
     color: #fce138;
   }
   
-
+  @media screen and (max-width: 980px) {
+    header h1 a {
+      /* this will be applied on any screen smaller than 980px */
+      color: tomato;
+    }
+  }
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  header h1 {
+    /* this will be applied on any screen between 768px and 575px */
+    font-size: 80px;
+  }
+}
+  
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  header h1 {
+    /* this will be applied on any screen smaller than 575px */
+    font-size: 100px;
+  }
+}
   
   
